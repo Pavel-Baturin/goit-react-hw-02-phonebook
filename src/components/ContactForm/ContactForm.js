@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import { nanoid } from "nanoid";
 import s from "./ContactForm.module.css";
 
 class ContactForm extends Component {
   state = {
     name: "",
     number: "",
-    id: nanoid(),
   };
 
   handleInputChange = (e) => {
@@ -25,7 +23,6 @@ class ContactForm extends Component {
     this.setState({
       name: "",
       number: "",
-      id: "",
     });
   };
 
